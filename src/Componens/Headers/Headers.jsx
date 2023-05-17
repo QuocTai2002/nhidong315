@@ -14,7 +14,12 @@ const Headers = () => {
           <div className="flex-1 min-h-full min-w-full rounded-3xl bg-white shadow-xl p-10 lg:p-10 text-gray-800 relative md:flex items-center text-center md:text-left">
             <div className="w-full md:w-1/2">
               <div className="mb-10 lg:mb-20">
-                <svg
+              <img
+                    src="https://315healthcare.com/images/logo_new.jpg"
+                    alt="#"
+                    style={{width:150}}
+                  />
+                {/* <svg
                   id="logoipsum"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="15 30 147.778 40"
@@ -66,7 +71,7 @@ const Headers = () => {
                     fill="#0582C1"
                   />
                   <circle cx="154.512" cy="43.944" r="2.204" fill="#0582C1" />
-                </svg>
+                </svg> */}
               </div>
               <div
                 className="mb-10 md:mb-20 text-gray-600 font-light"
@@ -75,13 +80,13 @@ const Headers = () => {
                 <h1 className="font-black uppercase text-3xl lg:text-5xl text-yellow-500 mb-10">
                   Webside đang bảo trì !{" "}
                 </h1>
-                <p>xin lỗi vì sự bất tiện này .</p>
+                {/* <p>xin lỗi vì sự bất tiện này .</p> */}
                 {/* <p>Try to research or click button below.</p> */}
               </div>
               <div style={{ 
                 textAlign: "center", 
                 display:'flex',
-                gap:30,
+                gap:20,
                 alignItems:'center',
                 justifyContent:'center'
             }}>
