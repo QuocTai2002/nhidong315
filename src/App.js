@@ -1,13 +1,13 @@
-import logo from "./logo.svg";
+
 import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Headers from "./Componens/Headers/Headers";
+import { routes } from "./app/Routes";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/*" element={<Headers/>} />
+        {routes.map(({path, Component})=> <Route key={path} path={path} element={<Component/>} />)}
       </Routes>
     </BrowserRouter>
   );

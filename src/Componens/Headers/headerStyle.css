@@ -1,0 +1,37 @@
+.header{
+    color: #343434;
+    border-bottom: 1px solid black;
+    
+}
+.header ul li a{
+    font-size: 16px;
+    font-weight: normal;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.header ul li a{
+    padding: 5px 0;
+    transition: all .2s;
+    position: relative;
+}
+.header ul li a::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-bottom: 2px #0ea5e9 solid;
+    border-top: 2px #0ea5e9 solid;
+    transform: scaleY(2);
+    width: 100%;
+    height: 100%;
+    transition: all .3s;
+    opacity: 0;
+    z-index: -1;
+}
+.header ul li a:hover::after{
+    opacity: 1;
+    transform: scaleY(1);
+    
+    
+}
