@@ -1,0 +1,26 @@
+.btn_map{
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0,0,0,.12);
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+    justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
+    button{
+        width: 130px;
+        height: 40px;
+        border-radius: 8px; 
+        transition: all .3s;
+       &:hover{
+       transform: translateY(-4px);
+       }
+    }
+}
+.map_ctner{
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0,0,0,.12);
+    margin-bottom: 50px;
+}

@@ -29,8 +29,9 @@ const Drawer = () => {
           <li>
             <Tooltip title='Hổ Trợ' placement="left" color="blue">
               <a href=""> <i class="fa fa-headset"></i></a>
+              <img src="" alt="" />
             </Tooltip>
-           
+          
           </li>
         </ul>
       </div> 
