@@ -1,0 +1,99 @@
+.feedBack_container{
+    position: relative;
+    height: 400px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    &::after{
+        z-index: -1;
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-image: url('https://315healthcare.com/images/home/background-feedback.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    .btn_prev{
+        position: absolute;
+        left: 15%;
+        width: 40px;
+        height: 40px;
+        background-color: #217bb7;
+        border-radius: 50%;
+        i{
+            color: rgb(255, 255, 255,.8);
+        }
+    }
+    .btn_next{
+        position: absolute;
+        right: 15%;
+        width: 40px;
+        height: 40px;
+        background-color: #217bb7;
+        border-radius: 50%;
+        i{
+            color: rgb(255, 255, 255,.8);
+        }
+    }
+    .item{
+        height: 200px;
+        display: flex;
+        .img{
+            position: relative;
+            width: 200px;
+            img{
+                border-radius: 50%;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+            }
+            &::after{
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 50%;
+                height: 100%;
+                width: 810px;
+                background-color:rgba(0,109,181,.8);
+                z-index: -1;
+            }
+        }
+        .content{
+            width: 625px;
+            // background-color: red;
+            margin: 20px 0;
+            margin-left: 40px;
+            color: #fff;
+            h3{
+                font-size: 18px;
+                font-weight: 600;
+                padding-bottom: 5px;
+            }
+            p{
+                font-size: 16px;
+                display: inline;
+            }
+            i.fa-quote-left{
+                transform: translate(-6px,-6px);
+            }
+            i.fa-quote-right{
+                transform: translate(6px,-6px);
+            }
+            .rate{
+            text-align: right;
+            text-align: end;
+            transform: translateY(-10px);
+            }
+        }
+    }
+}
+.feedBack_h2{
+    top:9%;
+    left:40%;
+    color: #fff;
+}

@@ -1,0 +1,38 @@
+.card_tabs{
+    box-shadow: 0 0 12px rgba(15,61,145,.12);
+    margin: 16px;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 14px;
+    border: 1px solid #e5e5e5;
+    cursor: pointer;
+   
+}
+.card_tabs.active_nhiDong{
+    background-color: #effbff;
+    border: 1px solid #00adef;
+    
+}
+.card_tabs.active_tiemChung{
+    background-color: #ebf7e7;
+    border: 1px solid #71be54;
+}
+.card_tabs.active_phuSan{
+    background-color: #fde5f2;
+    border: 1px solid #e05ea2;
+}
+.card_tabs.active_daKhoa{
+    background-color: #ddfdff;
+    border: 1px solid #3dbbc1;
+}
+.card_tabs.active_laoKhoa{
+    background-color: #ffefe1;
+    border: 1px solid #f5821f;
+}
+.card_tabs.active_mat{
+    background-color: #defaff;
+    border: 1px solid #1dbfd7;
+}
+.title_tabs{
+    width: 347px;
+}

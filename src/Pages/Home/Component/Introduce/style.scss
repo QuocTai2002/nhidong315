@@ -1,0 +1,26 @@
+.background_introduce{
+background-image: url('https://w.ladicdn.com/s1440x651/5aa6273ea81f66ca2eacc40b/bg1-1-20220314103224.jpg');
+    .container{
+    overflow: hidden;
+    border-radius: 8px;
+    .content{
+        background-color: #fff;
+        h2{
+           color: #007dc1; 
+        }
+        .text{
+            background-color: #007dc1; 
+        }
+    }
+    .img{
+        height: 500px;
+        img{
+            width: 100%;
+            height: 500px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+    }
+}

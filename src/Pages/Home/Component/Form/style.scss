@@ -1,0 +1,24 @@
+.background_form {
+  width: 350px;
+  height: 450px;
+  background-color: #29aae1;
+  border-radius: 12px;
+  form {
+    padding: 10px 25px;
+    input{
+        margin: 10px 0;
+    }
+  }
+  button{
+    background-color: #fff;
+    padding: 5px 20px;
+    border-radius: 30px;
+    color: #007dc1;
+    transition: all .5s;
+    margin-top: 10px;
+    &:hover{
+        background-color: #000000;
+        color: #fff;
+    }
+  }
+}

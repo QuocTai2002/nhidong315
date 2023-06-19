@@ -69,7 +69,7 @@ const Footers = () => {
               </li>
               <li className="pb-2 footer_address">
                 <span>
-                  <i class="fa fa-home"></i> Văn phòng:{" "}
+                  <i class="fa fa-home"></i> Văn phòng Chính:{" "}
                 </span>
                 <a
                   href="https://www.google.com/maps/place/207B+Ho%C3%A0ng+V%C4%83n+Th%E1%BB%A5,+Ph%C6%B0%E1%BB%9Dng+8,+Ph%C3%BA+Nhu%E1%BA%ADn,+Th%C3%A0nh+ph%E1%BB%91+H%E1%BB%93+Ch%C3%AD+Minh,+Vietnam/@10.7996402,106.6692164,17z/data=!3m1!4b1!4m6!3m5!1s0x31752928c2be7997:0xa25a4d15c48d9313!8m2!3d10.7996402!4d106.6717913!16s%2Fg%2F11csh95j1f"

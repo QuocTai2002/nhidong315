@@ -6,7 +6,7 @@ import Drawer from '../Componens/modalDrawer/Drawer'
 const LayoutWeb = (props) => {
   return (
     <div>
-        <Headers/>
+        <Headers className='fixed' />
         {props.children}
         <Footers/>
         <div className='fixed top-1/3 right-0'><Drawer/></div>

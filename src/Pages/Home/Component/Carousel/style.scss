@@ -1,0 +1,33 @@
+.background_carousel{
+    position: relative;
+    height: 600px;
+    background-color: rgb(0, 0, 0,.5);
+    .item_carousel{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: -1;
+    img{
+        width: 100%; 
+        background-position: center; 
+        background-repeat: no-repeat;
+        background-size: cover;  
+    }
+    }
+    .content{
+        position: absolute;
+        top: 35%;
+        left: 10%;
+        width: 500px;
+    }
+}
+.carousel{
+    margin-top: 66px;
+    position: relative;
+    .formTV{
+        position: absolute;
+        z-index: 10;
+        right: 8%;
+        top: 12%;
+    }
+}
