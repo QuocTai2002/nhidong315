@@ -1,0 +1,33 @@
+.img_doctor{
+    position: absolute;
+    border-radius: 50%;
+    border: 2px solid #3bbce8;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    top: -100px;
+    left: 34px;
+    img{
+        position: absolute;
+    }
+}
+.content_doctor{
+    P{
+    &:first-of-type {
+        height: unset;
+    }
+}
+}
+.doctor {
+    .swiper-slide{
+    overflow: unset;
+    transition: all .5s;
+    &:hover{
+        transform: scale(1.05);
+    }
+}
+.swiper-wrapper{
+    margin-top: 62px;
+}
+}
+

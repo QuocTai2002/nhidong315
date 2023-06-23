@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import LayoutWed from "../../HOCs/LayoutWeb";
 import { Select } from "antd";
 import "./style.scss";
@@ -23,7 +23,9 @@ const Home = () => {
     setValueActiveStyle(activeStyle);
     setChiNhanh(data)
   };
-
+  useEffect(()=>{
+    window.scrollTo(0, 0);
+   },[])
   return (
     <LayoutWed>
       <section><Carousels/></section>

@@ -1,6 +1,8 @@
 import React from 'react'
 import './style.scss'
+import { useNavigate } from 'react-router-dom'
 const Introduce = () => {
+  const Navigate = useNavigate()
   return (
     <>
     <div className='background_introduce py-12'>
@@ -16,7 +18,7 @@ const Introduce = () => {
             </p>
             <p className='mt-14'>Khi khám chữa bệnh cho bé tại Hệ Thống Phòng Khám Nhi Đồng 315, các bác sĩ sẽ trực tiếp tư vấn các bài kiểm tra tổng quát, giải thích cặn kẽ kết quả xét nghiệm, chẩn đoán và có những can thiệp y học cần thiết cho bé. Giúp ba mẹ hiểu rõ tình trạng bệnh và cách điều trị để bố mẹ có thể chăm sóc bé một cách tốt nhất.</p>
             </div>
-            <button className='text p-2 font-bold  ml-5 text-white rounded-lg'>Xem Thêm</button>
+            <button onClick={()=>{Navigate('/Introduce')}} className='text p-2 font-bold  ml-5 text-white rounded-lg'>Xem Thêm</button>
         </div>
         </div>
     </div>

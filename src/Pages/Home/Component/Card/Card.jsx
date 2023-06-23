@@ -1,6 +1,12 @@
 import React from "react";
 import "./style.scss";
+import { useNavigate } from "react-router-dom";
 const Card = () => {
+const Navigate = useNavigate()
+const gotoTheThanhVien =(title)=>{
+    Navigate('/TheThanhVien/' + title)
+}
+
   return (
     <>
     <div className="pt-12 text-center">
@@ -20,7 +26,7 @@ const Card = () => {
               />
                <div className="shape"> 
               <div className="button">
-              <button className="font-medium" >Xem gói</button>
+              <button className="font-medium" onClick={()=>{gotoTheThanhVien('NhiDong')}} >Xem gói</button>
               </div>
               </div>
             </div>  
@@ -40,7 +46,7 @@ const Card = () => {
               />
                <div className="shape"> 
               <div className="button">
-              <button className="font-medium" >Xem gói</button>
+              <button className="font-medium" onClick={()=>{gotoTheThanhVien('NhiDong')}} >Xem gói</button>
               </div>
               </div>
             </div>  
@@ -60,7 +66,7 @@ const Card = () => {
               />
               <div className="shape"> 
               <div className="button">
-              <button className="font-medium" >Xem gói</button>
+              <button className="font-medium" onClick={()=>{gotoTheThanhVien('NhiDong')}} >Xem gói</button>
               </div>
               </div>
              
@@ -92,7 +98,7 @@ const Card = () => {
               />
                <div className="shape"> 
               <div className="button">
-              <button className="font-medium" >Xem gói</button>
+              <button className="font-medium" onClick={()=>{gotoTheThanhVien('PhuSan')}} >Xem gói</button>
               </div>
               </div>
             </div>  
@@ -112,7 +118,7 @@ const Card = () => {
               />
               <div className="shape"> 
               <div className="button">
-              <button className="font-medium" >Xem gói</button>
+              <button className="font-medium"  onClick={()=>{gotoTheThanhVien('PhuSan')}}>Xem gói</button>
               </div>
               </div>
             </div>  
@@ -132,7 +138,7 @@ const Card = () => {
               />
               <div className="shape"> 
               <div className="button">
-              <button className="font-medium" >Xem gói</button>
+              <button className="font-medium"  onClick={()=>{gotoTheThanhVien('PhuSan')}}>Xem gói</button>
               </div>
               </div>
             </div>  
@@ -162,7 +168,7 @@ const Card = () => {
               />
                <div className="shape"> 
               <div className="button">
-              <button className="font-medium" >Xem gói</button>
+              <button className="font-medium"  onClick={()=>{gotoTheThanhVien('DaKhoa')}}>Xem gói</button>
               </div>
               </div>
             </div>  
@@ -182,7 +188,7 @@ const Card = () => {
               />
               <div className="shape"> 
               <div className="button">
-              <button className="font-medium" >Xem gói</button>
+              <button className="font-medium"  onClick={()=>{gotoTheThanhVien('DaKhoa')}}>Xem gói</button>
               </div>
               </div>
             </div>  
@@ -202,7 +208,7 @@ const Card = () => {
               />
                <div className="shape"> 
               <div className="button">
-              <button className="font-medium" >Xem gói</button>
+              <button className="font-medium"  onClick={()=>{gotoTheThanhVien('DaKhoa')}}>Xem gói</button>
               </div>
               </div>
             </div>  
@@ -219,7 +225,7 @@ const Card = () => {
           Đăng ký
         </button>
       </div>
-      <div className="thethanhvien laoKhoa text-center">
+      {/* <div className="thethanhvien laoKhoa text-center">
         <h2 className="pt-4 mb-5 text-xl font-bold text-white">
           THẺ THÀNH VIÊN LÃO KHOA 
         </h2>
@@ -288,8 +294,8 @@ const Card = () => {
         >
           Đăng ký
         </button>
-      </div>
-      <div className="thethanhvien mat text-center">
+      </div> */}
+      {/* <div className="thethanhvien mat text-center">
         <h2 className="pt-4 mb-5 text-xl font-bold text-white">
           THẺ THÀNH VIÊN MẮT
         </h2>
@@ -358,7 +364,7 @@ const Card = () => {
         >
           Đăng ký
         </button>
-      </div>
+      </div> */}
     </div>
     </>
     

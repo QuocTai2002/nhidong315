@@ -1,19 +1,20 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink} from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import i18n from "i18next";
 import "./headerStyle.css";
 const Headers = () => {
   const { t } = useTranslation("translation");
   const changeLanguage = (e) => {
-    const languageValue = e.target.value;
-    i18n.changeLanguage(languageValue);
+  const languageValue = e.target.value;
+  i18n.changeLanguage(languageValue);
   };
+
   return (
-    <div className="header ">
+    <header className="header ">
       <div className="container mx-auto w-3/5 flex items-center justify-between">
         <img
-          src="images/logo_nhidong315.png"
+          src="https://315healthcare.com/images/logo_new.jpg"
           alt="nhidong315"
           className="w-24"
         />
@@ -32,11 +33,12 @@ const Headers = () => {
             </li>
             <li>
               <NavLink
+              to="/Doctor"
                 className={(p) => {
                   if (p.isActive) return "text-sky-500";
                   return "hover:text-sky-500 duration-300";
                 }}
-                to="/Doctor"
+                
               >
                 {t("Bác sĩ")}
               </NavLink>
@@ -49,7 +51,7 @@ const Headers = () => {
                   return "hover:text-sky-500 duration-300";
                 }}
               >
-                {t("Thư viện")}
+                {t("Dịch Vụ")}
               </NavLink>
             </li>
             <li>
@@ -65,13 +67,14 @@ const Headers = () => {
             </li>
             <li>
               <NavLink
-                to="/Q&A"
+                to="https://www.315vieclam.com/"
+                target="_blank"
                 className={(p) => {
                   if (p.isActive) return "text-sky-500";
                   return "hover:text-sky-500 duration-300";
                 }}
               >
-                {t("Hỏi đáp")}
+                {t("Tuyển Dụng")}
               </NavLink>
             </li>
             <li>
@@ -82,7 +85,7 @@ const Headers = () => {
                   return "hover:text-sky-500 duration-300";
                 }}
               >
-                {t("Giới thiệu")}
+                {t("Giới Thiệu")}
               </NavLink>
             </li>
             <li>
@@ -105,7 +108,7 @@ const Headers = () => {
           </ul>
         </div>
       </div>
-    </div>
+    </header>
   );
 };
 

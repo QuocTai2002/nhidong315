@@ -1,6 +1,8 @@
 import React from 'react'
 import './style.scss'
+import { useNavigate } from 'react-router-dom'
 const Doctor = () => {
+    const Navigate = useNavigate()
   return (
     <div className='doctor_container'>
     <div className=' container w-4/5 mx-auto ' >
@@ -50,7 +52,7 @@ const Doctor = () => {
             </div>
         </div>
         <div className='text-right mt-12'>
-        <button className=' text-white font-semibold text-lg'  >Xem thêm . . .</button>
+        <button className=' text-white font-semibold text-lg' onClick={()=>{Navigate("/Doctor")}}  >Xem thêm . . .</button>
         </div>
         
 

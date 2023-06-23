@@ -6,7 +6,40 @@ import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import { useNavigate } from "react-router-dom";
+const data = [{
+  tieuDe:'Viêm xoang gây nên những biến chứng nghiêm trọng gì',
+  hinhAnh:'https://nhanhauclinic.com.vn/wp-content/uploads/2023/06/gfgf-01.png',
+  text:'Viêm xoang là một dạng bệnh thường xuất hiện ở nhiều người và được gọi là viêm xoang mũi. Tình trạng viêm nhiễm của các lớp viêm mạc hô hấp [...]					'
+},
+{
+  tieuDe:'Viêm xoang gây nên những biến chứng nghiêm trọng gì',
+  hinhAnh:'https://nhanhauclinic.com.vn/wp-content/uploads/2023/06/gfgf-01.png',
+  text:'Viêm xoang là một dạng bệnh thường xuất hiện ở nhiều người và được gọi là viêm xoang mũi. Tình trạng viêm nhiễm của các lớp viêm mạc hô hấp [...]					'
+},
+{
+  tieuDe:'Viêm xoang gây nên những biến chứng nghiêm trọng gì',
+  hinhAnh:'https://nhanhauclinic.com.vn/wp-content/uploads/2023/06/gfgf-01.png',
+  text:'Viêm xoang là một dạng bệnh thường xuất hiện ở nhiều người và được gọi là viêm xoang mũi. Tình trạng viêm nhiễm của các lớp viêm mạc hô hấp [...]					'
+},
+{
+  tieuDe:'Viêm xoang gây nên những biến chứng nghiêm trọng gì',
+  hinhAnh:'https://nhanhauclinic.com.vn/wp-content/uploads/2023/06/gfgf-01.png',
+  text:'Viêm xoang là một dạng bệnh thường xuất hiện ở nhiều người và được gọi là viêm xoang mũi. Tình trạng viêm nhiễm của các lớp viêm mạc hô hấp [...]					'
+},
+{
+  tieuDe:'Viêm xoang gây nên những biến chứng nghiêm trọng gì',
+  hinhAnh:'https://nhanhauclinic.com.vn/wp-content/uploads/2023/06/gfgf-01.png',
+  text:'Viêm xoang là một dạng bệnh thường xuất hiện ở nhiều người và được gọi là viêm xoang mũi. Tình trạng viêm nhiễm của các lớp viêm mạc hô hấp [...]					'
+},
+{
+  tieuDe:'Viêm xoang gây nên những biến chứng nghiêm trọng gì',
+  hinhAnh:'https://nhanhauclinic.com.vn/wp-content/uploads/2023/06/gfgf-01.png',
+  text:'Viêm xoang là một dạng bệnh thường xuất hiện ở nhiều người và được gọi là viêm xoang mũi. Tình trạng viêm nhiễm của các lớp viêm mạc hô hấp [...]					'
+},
+]
 const Blog = () => {
+ const Navigate = useNavigate()
   return (
     <>
       <div className="py-10">
@@ -26,160 +59,27 @@ const Blog = () => {
           modules={[FreeMode, Pagination, Autoplay, Navigation]}
           className="mySwiper py-10"
         >
-          <SwiperSlide>
+          {
+            data?.map((items)=>{
+              
+            return <SwiperSlide>
             <div>
               <img
-                src="https://st.315healthcare.com//sr/display?op=resize&h=196&path=post/profile/avatar/20210824/240571681_394336045373828_570637457227938515_n.jpg"
+                src={items.hinhAnh}
                 alt="#"
               />
-              <h2>Nên cho bé ăn gì để tốt cho sức khỏe răng miệng?</h2>
-              <p>
-                Táo, cam, lê, và dưa hấu tươi đều có vị thơm ngon và tốt cho
-                răng, loại quả nào càng cần nhai nhiều thì càng tốt cho răng
-                miệng. Đương nhiên, các chất đường trong trái cây vẫn có thể gây
-                sâu răng nhưng chúng vẫn tốt hơn nhiều so với các loại đường hóa
-                học chứa trong kẹo công nghiệp.
-              </p>
+              <h2>{items.tieuDe}</h2>
+              <p>{items.text}</p>
             </div>
             <div className="blog_transition">
                 <div>
-                <button >Đọc Thêm</button>
+                <button onClick={()=>{Navigate('/blog/content')}} >Đọc Thêm</button>
                 </div>
                 
             </div>
           </SwiperSlide>
-          <SwiperSlide>
-            <div>
-              <img
-                src="https://st.315healthcare.com//sr/display?op=resize&h=196&path=post/profile/avatar/20210824/240571681_394336045373828_570637457227938515_n.jpg"
-                alt="#"
-              />
-              <h2>Nên cho bé ăn gì để tốt cho sức khỏe răng miệng?</h2>
-              <p>
-                Táo, cam, lê, và dưa hấu tươi đều có vị thơm ngon và tốt cho
-                răng, loại quả nào càng cần nhai nhiều thì càng tốt cho răng
-                miệng. Đương nhiên, các chất đường trong trái cây vẫn có thể gây
-                sâu răng nhưng chúng vẫn tốt hơn nhiều so với các loại đường hóa
-                học chứa trong kẹo công nghiệp.
-              </p>
-            </div>
-            <div className="blog_transition">
-                <div>
-                <button >Đọc Thêm</button>
-                </div>
-                
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div>
-              <img
-                src="https://st.315healthcare.com//sr/display?op=resize&h=196&path=post/profile/avatar/20210824/240571681_394336045373828_570637457227938515_n.jpg"
-                alt="#"
-              />
-              <h2>Nên cho bé ăn gì để tốt cho sức khỏe răng miệng?</h2>
-              <p>
-                Táo, cam, lê, và dưa hấu tươi đều có vị thơm ngon và tốt cho
-                răng, loại quả nào càng cần nhai nhiều thì càng tốt cho răng
-                miệng. Đương nhiên, các chất đường trong trái cây vẫn có thể gây
-                sâu răng nhưng chúng vẫn tốt hơn nhiều so với các loại đường hóa
-                học chứa trong kẹo công nghiệp.
-              </p>
-            </div>
-            <div className="blog_transition">
-                <div>
-                <button >Đọc Thêm</button>
-                </div>
-                
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div>
-              <img
-                src="https://st.315healthcare.com//sr/display?op=resize&h=196&path=post/profile/avatar/20210824/240571681_394336045373828_570637457227938515_n.jpg"
-                alt="#"
-              />
-              <h2>Nên cho bé ăn gì để tốt cho sức khỏe răng miệng?</h2>
-              <p>
-                Táo, cam, lê, và dưa hấu tươi đều có vị thơm ngon và tốt cho
-                răng, loại quả nào càng cần nhai nhiều thì càng tốt cho răng
-                miệng. Đương nhiên, các chất đường trong trái cây vẫn có thể gây
-                sâu răng nhưng chúng vẫn tốt hơn nhiều so với các loại đường hóa
-                học chứa trong kẹo công nghiệp.
-              </p>
-            </div>
-            <div className="blog_transition">
-                <div>
-                <button >Đọc Thêm</button>
-                </div>
-                
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div>
-              <img
-                src="https://st.315healthcare.com//sr/display?op=resize&h=196&path=post/profile/avatar/20210824/240571681_394336045373828_570637457227938515_n.jpg"
-                alt="#"
-              />
-              <h2>Nên cho bé ăn gì để tốt cho sức khỏe răng miệng?</h2>
-              <p>
-                Táo, cam, lê, và dưa hấu tươi đều có vị thơm ngon và tốt cho
-                răng, loại quả nào càng cần nhai nhiều thì càng tốt cho răng
-                miệng. Đương nhiên, các chất đường trong trái cây vẫn có thể gây
-                sâu răng nhưng chúng vẫn tốt hơn nhiều so với các loại đường hóa
-                học chứa trong kẹo công nghiệp.
-              </p>
-            </div>
-            <div className="blog_transition">
-                <div>
-                <button >Đọc Thêm</button>
-                </div>
-                
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div>
-              <img
-                src="https://st.315healthcare.com//sr/display?op=resize&h=196&path=post/profile/avatar/20210824/240571681_394336045373828_570637457227938515_n.jpg"
-                alt="#"
-              />
-              <h2>Nên cho bé ăn gì để tốt cho sức khỏe răng miệng?</h2>
-              <p>
-                Táo, cam, lê, và dưa hấu tươi đều có vị thơm ngon và tốt cho
-                răng, loại quả nào càng cần nhai nhiều thì càng tốt cho răng
-                miệng. Đương nhiên, các chất đường trong trái cây vẫn có thể gây
-                sâu răng nhưng chúng vẫn tốt hơn nhiều so với các loại đường hóa
-                học chứa trong kẹo công nghiệp.
-              </p>
-            </div>
-            <div className="blog_transition">
-                <div>
-                <button >Đọc Thêm</button>
-                </div>
-                
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div>
-              <img
-                src="https://st.315healthcare.com//sr/display?op=resize&h=196&path=post/profile/avatar/20210824/240571681_394336045373828_570637457227938515_n.jpg"
-                alt="#"
-              />
-              <h2>Nên cho bé ăn gì để tốt cho sức khỏe răng miệng?</h2>
-              <p>
-                Táo, cam, lê, và dưa hấu tươi đều có vị thơm ngon và tốt cho
-                răng, loại quả nào càng cần nhai nhiều thì càng tốt cho răng
-                miệng. Đương nhiên, các chất đường trong trái cây vẫn có thể gây
-                sâu răng nhưng chúng vẫn tốt hơn nhiều so với các loại đường hóa
-                học chứa trong kẹo công nghiệp.
-              </p>
-            </div>
-            <div className="blog_transition">
-                <div>
-                <button >Đọc Thêm</button>
-                </div>
-                
-            </div>
-          </SwiperSlide>
+            })
+          }
         </Swiper>
       </div>
     </>

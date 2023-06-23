@@ -1,9 +1,11 @@
 {
-    "Trang chủ" : "Trang chủ",
-    "Bác sĩ"    : "Bác sĩ",
+    "Trang chủ" : "Trang Chủ",
+    "Bác sĩ"    : "Bác Sĩ",
     "Thư Viện"  : "Thư Viện",
-    "Bài Viết"  : "Bài viết",
+    "Bài Viết"  : "Bài Viết",
     "Hỏi đáp"   : "Hỏi Đáp",
-    "Giới Thiệu":  "Giới Thiệu",
-    "Liên hệ"   : "Liên hệ"
+    "Giới Thiệu": "Giới Thiệu",
+    "Liên hệ"   : "Liên Hệ",
+    "Dịch Vụ"   : "Dịch Vụ",
+    "Tuyển Dụng": "Tuyển Dụng"
 }

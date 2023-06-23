@@ -18,6 +18,7 @@ module.exports = {
         'LaoKhoa-315': '#f5821f',
         'mat-315': '#1dbfd7',
         'daKhoa-315': '#3dbbc1',
+        'title-315' : '#007dc1'
         
       },
       left: {
