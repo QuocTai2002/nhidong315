@@ -7,8 +7,7 @@ const MapTabs = (props) => {
   const [valueLinkMap, setValueLinkMap] = useState(
     "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15676.97699570334!2d106.6960584!3d10.7925958!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175293d61859fdb%3A0x2096daaab72db10d!2zTmhpIMSR4buTbmcgMzE1IFbDoCBUacOqbSBDaOG7p25n!5e0!3m2!1svi!2s!4v1687617556159!5m2!1svi!2s"
   );
-  const [isActive, setIsActive] = useState(mapAddress[0].maPhongKHam);
-
+  const [isActive, setIsActive] = useState(null);
   const handlChangeMap = (link) => {
     setValueLinkMap(link);
   };
@@ -19,8 +18,10 @@ const MapTabs = (props) => {
     document.getElementById(id).classList.add(props?.valueActiveStyle);
   };
   useEffect(() => {
-    document.getElementById(isActive).classList.add(props?.valueActiveStyle);
-  }, []);
+    setIsActive(mapAddress[0]?.maPhongKHam)
+    // console.log(mapAddress[0]?.maPhongKHam);
+    // document.getElementById(isActive).classList.add(props?.valueActiveStyle);
+  }, [mapAddress[0]?.maPhongKHam]);
   return (
     <div className="flex items-center justify-center px-4 pb-4  gap-3">
       <div className="w-2/5 mt-4" style={{ backgroundColor: "#fafafa" }}>

@@ -26,9 +26,9 @@ const Home = () => {
     setValueActiveStyle(activeStyle);
     // setChiNhanh(data)
   };
-  useEffect(() => {
-    window.scrollTo(0, 0);
-    dispatch(postDataMap(data?.map))
+  useEffect( ()  => {
+  dispatch(postDataMap(data.map))
+   window.scrollTo(0, 0);
   }, []);
   return (
     <LayoutWed>
