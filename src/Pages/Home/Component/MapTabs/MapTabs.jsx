@@ -72,7 +72,7 @@ const MapTabs = (props) => {
               
               <p className="text-red-500 font-medium">
                 <span className="text-gray-400 font-medium">Hotline:</span>
-                <a href={`tel:+${items.SDT}`}> {items.SDT} {items.comingSoon ? ' - Coming soon' :''}</a>
+                <a href={`tel:${items.SDT}`}> {items.SDT} {items.comingSoon ? ' - Coming soon' :''}</a>
               </p>
               <p>
                 <span className="text-gray-400 font-medium">Địa Chỉ: </span>
