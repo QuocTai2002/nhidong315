@@ -3,7 +3,7 @@ import LayoutWed from "../../HOCs/LayoutWeb";
 import { Select } from "antd";
 import "./style.scss";
 import MapTabs from "./Component/MapTabs/MapTabs";
-import * as data from '../../Data/map'
+import * as data from "../../Data/map";
 import Blog from "./Component/Blog/Blog";
 import Feedback from "./Component/feedBack/Feedback";
 import Card from "./Component/Card/Card";
@@ -12,34 +12,57 @@ import Service from "./Component/Service/Service";
 import Introduce from "./Component/Introduce/Introduce";
 import Carousels from "./Component/Carousel/Carousel";
 import BackToTop from "../../Componens/BackToTop/BackToTop";
+import { useDispatch, useSelector } from "react-redux";
+import { postDataMap } from "../../Redux/Thunk";
 const Home = () => {
+  const dispatch = useDispatch();
   const [valueColor, setColor] = useState("bg-nhiDong-315");
   const [valueText, SetValueText] = useState("Nhi Đồng");
   const [valueActiveStyle, setValueActiveStyle] = useState("active_nhiDong");
-  const [chiNhanh,setChiNhanh] = useState(data.Quan)
-  const changeColor = (color, text, activeStyle,data) => {
+  // const [chiNhanh,setChiNhanh] = useState()
+  const changeColor = (color, text, activeStyle) => {
     setColor(color);
     SetValueText(text);
     setValueActiveStyle(activeStyle);
-    setChiNhanh(data)
+    // setChiNhanh(data)
   };
-  useEffect(()=>{
+  useEffect(() => {
     window.scrollTo(0, 0);
-   },[])
+    dispatch(postDataMap(data?.map))
+  }, []);
   return (
     <LayoutWed>
-      <section><Carousels/></section>
-      <section><Introduce/></section>
-      <section><Service/></section>
-      <section><Doctor/></section>
-      <section><Card/></section>
-      <section className="relative"><Feedback/></section>
-      <section className="w-3/5 container mx-auto"><Blog/></section>
+      <section>
+        <Carousels />
+      </section>
+      <section>
+        <Introduce />
+      </section>
+      <section>
+        <Service />
+      </section>
+      <section>
+        <Doctor />
+      </section>
+      <section>
+        <Card />
+      </section>
+      <section className="relative">
+        <Feedback />
+      </section>
+      <section className="w-3/5 container mx-auto">
+        <Blog />
+      </section>
       <div className="map_ctner container mx-auto w-3/5">
         <div className="btn_map">
           <button
             onClick={() => {
-              changeColor("bg-nhiDong-315", "Nhi Đồng", "active_nhiDong",data.Quan);
+              changeColor(
+                "bg-nhiDong-315",
+                "Nhi Đồng",
+                "active_nhiDong",
+               
+              );
             }}
             className="bg-nhiDong-315 btn_123"
           >
@@ -145,16 +168,15 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <section> 
+        <section>
           <MapTabs
-          color={valueColor}
-          text={valueText}
-          valueActiveStyle={valueActiveStyle}
-          data={chiNhanh}
-        /></section>
-       
+            color={valueColor}
+            text={valueText}
+            valueActiveStyle={valueActiveStyle}
+          />
+        </section>
       </div>
-      <BackToTop/>
+      <BackToTop />
     </LayoutWed>
   );
 };

@@ -13,7 +13,7 @@ const img_background =
   "https://png.pngtree.com/thumb_back/fw800/back_our/20190619/ourmid/pngtree-blue-glow-background-business-card-design-template-image_132608.jpg";
 const Introduce = () => {
   useEffect(() => {
-    // window.scroll(0,0)
+    window.scroll(0,0)
   }, []);
   return (
     <LayoutWeb>
