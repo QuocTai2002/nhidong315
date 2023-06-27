@@ -208,9 +208,8 @@ const Home = () => {
                 Phố
               </h2>
               <Select
+              className="w-52 max-[375px]:w-44"
                 onChange={changecity}
-                defaultValue="hồ chí minh"
-                style={{ width: 200 }}
                 options={[
                   {
                     label: "TP. Hồ Chí Minh",
@@ -228,9 +227,9 @@ const Home = () => {
                 <i class="fa fa-city text-nhiDong-315"></i> Quận/Huyện
               </h2>
               <Select
+              className="w-40 max-[375px]:w-32"
                 onChange={changeQuanHuyen}
                 placeholder="Vui lòng chọn"
-                style={{ width: 150 }}
                 options={valueQuan}
               />
             </div>
