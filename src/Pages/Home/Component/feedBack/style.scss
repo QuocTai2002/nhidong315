@@ -25,6 +25,12 @@
         height: 40px;
         background-color: #217bb7;
         border-radius: 50%;
+        @media screen and (max-width:820px){
+            left: 5%;
+        }
+        @media screen and (max-width:391px){
+            display: none;
+        }
         i{
             color: rgb(255, 255, 255,.8);
         }
@@ -36,6 +42,12 @@
         height: 40px;
         background-color: #217bb7;
         border-radius: 50%;
+        @media screen and (max-width:820px){
+            right: 5%;
+        }
+        @media screen and (max-width:391px){
+            display: none;;
+        }
         i{
             color: rgb(255, 255, 255,.8);
         }
@@ -43,14 +55,37 @@
     .item{
         height: 200px;
         display: flex;
+        @media screen and (max-width:820px){
+            width: 600px;
+        }
+        @media screen and (max-width:391px){
+            height: 290px;
+            display: block;
+            margin-top: 45px;
+            background-color:rgba(0,109,181,.8) ;
+            border-radius: 12px;
+            width: unset;
+        }
         .img{
             position: relative;
             width: 200px;
+            @media screen and (max-width:820px){
+                width: 280px;
+            }
+            @media screen and (max-width:391px){
+                width: 80px;
+                height: 80px;
+                padding: 6px;
+               
+            }
             img{
                 border-radius: 50%;
                 width: 100%;
                 height: 100%;
                 position: absolute;
+                @media screen and (max-width:391px){
+                    position: unset;
+                }
             }
             &::after{
                 content: '';
@@ -61,6 +96,12 @@
                 width: 810px;
                 background-color:rgba(0,109,181,.8);
                 z-index: -1;
+               @media screen and (max-width:820px){
+                    width: 526px;
+               }
+               @media screen and (max-width:391px){
+                background-color: unset;
+            }
             }
         }
         .content{
@@ -69,6 +110,11 @@
             margin: 20px 0;
             margin-left: 40px;
             color: #fff;
+            @media screen and (max-width:391px){
+                margin: 0;
+                margin-left: 15px;
+                width: 290px;
+            }
             h3{
                 font-size: 18px;
                 font-weight: 600;
@@ -96,4 +142,10 @@
     top:9%;
     left:40%;
     color: #fff;
+    @media screen and (max-width:820px){
+        left: 34%;
+    }
+    @media screen and (max-width:391px){
+        left: 15%;
+    }
 }

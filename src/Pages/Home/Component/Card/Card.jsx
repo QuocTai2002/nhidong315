@@ -10,9 +10,9 @@ const gotoTheThanhVien =(title)=>{
   return (
     <>
     <div className="pt-12 text-center">
-      <h2 className="text_title font-bold text-3xl ">THẺ THÀNH VIÊN 315</h2>
+      <h2 className="text_title font-bold text-3xl max-[820px]:text-2xl ">THẺ THÀNH VIÊN 315</h2>
     </div>
-    <div className="container w-4/5 mx-auto flex items-center justify-center py-12 gap-16 flex-wrap">
+    <div className=" max-[391px]:gap-10 container w-4/5 max-[820px]:w-full mx-auto flex items-center justify-center py-12 gap-16 flex-wrap">
       <div className="thethanhvien text-center">
         <h2 className="pt-4 mb-5 text-xl font-bold text-white">
           THẺ THÀNH VIÊN NHI

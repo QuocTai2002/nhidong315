@@ -21,7 +21,7 @@ const BackToTop = () => {
     }, []);
   return (
     <>
-    <button onClick={scrollToTop} className={`back-to-top ${showButton ? 'show font-bold text-2xl bg-slate-400 rounded-full fixed bottom-16 z-10 right-16 w-12 h-12 leading-12' : ''}`} style={{backgroundColor:'#4cd6ff'}}>
+    <button onClick={scrollToTop} className={`back-to-top ${showButton ? 'show font-bold text-2xl bg-slate-400 rounded-full fixed bottom-16 max-[820px]:bottom-10 max-[391px]:bottom-5 max-[391px]:right-6 max-[391px]:text-xl max-[391px]:w-10 max-[391px]:h-10 z-10 right-16 w-12 h-12 leading-12' : ''}`} style={{backgroundColor:'#4cd6ff'}}>
       <i class="  fa fa-arrow-up" style={{color:'#fff'}}></i>
     </button>
     

@@ -9,7 +9,7 @@ const LayoutWeb = (props) => {
         <Headers className='fixed' />
         {props.children}
         <Footers/>
-        <div className='fixed top-1/3 right-0'><Drawer/></div>
+        <div className='fixed top-1/3 z-10 right-0'><Drawer/></div>
     </div>
   )
 }

@@ -2,6 +2,19 @@
     position: relative;
     height: 600px;
     background-color: rgb(0, 0, 0,.5);
+    @media screen and (max-width:1250px){
+        height: 450px;
+    }
+    @media screen and (max-width:1024px){
+        height: 420px;
+    }
+    @media screen and (max-width:820px){
+        height: 320px;
+    }
+    @media screen and (max-width:391px){
+        height: 165px;
+    }
+
     .item_carousel{
         position: absolute;
         top: 0;
@@ -19,15 +32,36 @@
         top: 35%;
         left: 10%;
         width: 500px;
+        @media screen and (max-width:820px){
+            top:  22%;
+        }
+        @media screen and (max-width:391px){
+            width: auto;
+            top:0;
+        }
     }
 }
 .carousel{
     margin-top: 66px;
     position: relative;
+    @media screen and (max-width:391px){
+        margin-top: 62px;
+    }
     .formTV{
         position: absolute;
         z-index: 10;
         right: 8%;
         top: 12%;
+        @media screen and (max-width:1024px){
+            position: unset;
+            padding: 25px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #E7FAFF;
+        }
+        @media screen and (max-width:1250px){
+            top: 4%;
+        }
     }
 }

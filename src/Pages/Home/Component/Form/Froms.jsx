@@ -9,7 +9,7 @@ const From = () => {
         <Input placeholder="Họ Và tên" />
         <Input placeholder="Số điện thoại" type="number" />
         <Input placeholder="email" type="email" />
-        <Input.TextArea placeholder="Lời nhắn" rows={6} className="mt-3"  />
+        <Input.TextArea placeholder="Lời nhắn"  className="mt-3 h-24"  />
       </form>
       <button className="font-semibold text-xl ">Đăng kí</button>
     </div>

@@ -4,11 +4,11 @@ import "./footerStyle.css";
 const Footers = () => {
   return (
     <div className="footer_background">
-      <footer className="container mx-auto w-3/5">
-        <div className="flex  justify-around gap-6">
-          <div className="w-2/6">
+      <footer className="container mx-auto max-[820px]:w-11/12 w-3/5">
+        <div className="flex max-[391px]:flex-col  justify-around gap-6">
+          <div className="w-2/6 max-[391px]:flex max-[391px]:w-full">
             <img
-              className="w-36"
+              className="w-36 max-[391px]:w-28 max-[391px]:h-28"
               src="images/logo_nhidong315.png"
               alt="nhi đồng 315"
             />
@@ -19,9 +19,10 @@ const Footers = () => {
               pariatur. Sequi, quaerat velit?
             </p>
           </div>
-          <div className=" w-1/6 ml-5">
-            <h2 className="mb-6 text-xl">liên Kết</h2>
-            <ul className="list-disc">
+          <div className=" w-1/6 max-[391px]:w-full ml-5">
+            <h2 className="mb-6 text-xl  max-[391px]:mb-0 max-[391px]:-translate-x-4 ">liên Kết</h2>
+            <ul className="list-disc  max-[391px]:flex ">
+              <div >
               <li className="pb-2 hover:translate-x-3 duration-500">
                 <Link to="/">Trang chủ</Link>
               </li>
@@ -34,6 +35,8 @@ const Footers = () => {
               <li className="pb-2 hover:translate-x-3 duration-500">
                 <Link to="/blog">Bài viết</Link>
               </li>
+              </div>
+              <div className="max-[391px]:ml-16">
               <li className="pb-2 hover:translate-x-3 duration-500">
                 <Link to="/Q&A">Hỏi đáp</Link>
               </li>
@@ -43,10 +46,13 @@ const Footers = () => {
               <li className="pb-2 hover:translate-x-3 duration-500">
                 <Link to="/Contact">Liên hệ</Link>
               </li>
+              </div>
+              
+              
             </ul>
           </div>
-          <div className="w-2/6 ">
-            <h2 className="mb-6 text-xl">Liên hệ</h2>
+          <div className="w-2/6  max-[391px]:w-full ">
+            <h2 className="mb-6 text-xl  max-[391px]:mb-0 ">Liên hệ</h2>
             <ul className="">
               <li className="pb-2 footer_phone">
                 <span>
@@ -84,9 +90,9 @@ const Footers = () => {
               </li>
             </ul>
           </div>
-          <div className="w-1/6">
-            <h2 className="mb-6 text-xl">Follow Us</h2>
-            <ul className="flex items-center justify-between">
+          <div className="w-1/6  max-[391px]:w-4/5 max-[391px]:flex  max-[391px]:gap-5 max-[391px]:text-center max-[391px]:items-center ">
+            <h2 className="mb-6 max-[391px]:mb-0 text-xl">Follow Us</h2>
+            <ul className="flex items-center  max-[391px]:gap-5 justify-between">
               <li className="text-center  ">
                 <a href="https://www.facebook.com/hethongphongkhamnhidong315" target="blank">
                   <i class="w-10 h-10 bg-white hover:border-white border  hover:scale-125 hover:text-white duration-500 hover:bg-black text-blue-500 leading-10 text-xl rounded-full fab fa-facebook-f"></i>

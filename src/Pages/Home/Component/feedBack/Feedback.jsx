@@ -5,11 +5,11 @@ const Feedback = () => {
   const ref = useRef();
   return (
     <>
-    <h2 className="absolute text-3xl font-semibold feedBack_h2" >PHẢN HỒI KHÁCH HÀNG</h2>
+    <h2 className="max-[820px]:text-2xl absolute text-3xl font-semibold feedBack_h2" >PHẢN HỒI KHÁCH HÀNG</h2>
       <div className="feedBack_container">
         <Carousel
           autoplay
-          className="w-3/5 container mx-auto"
+          className="w-3/5 max-[820px]:w-4/5 container mx-auto"
           ref={ref}
         >
           <div>
@@ -29,8 +29,6 @@ const Feedback = () => {
                   Mình đã cho bé đến khám nhiều lần tại Nhi Đồng 315 và thực sự
                   hài lòng về dịch vụ khám; đặc biệt rất yên tâm vì các bác sĩ
                   khám trực tiếp cho bé đều là các bác sĩ có kinh nghiệm lâu năm
-                  . Ngoài ra mình còn được các bác sĩ tư vấn nhiệt tình giúp
-                  mình tự tin hơn khi chăm sóc cho bé tại nhà. 
                 </p>
                 <i class="fa fa-quote-right"></i>
                 </div>
@@ -107,9 +105,7 @@ const Feedback = () => {
                 <p> 
                   Mình đã cho bé đến khám nhiều lần tại Nhi Đồng 315 và thực sự
                   hài lòng về dịch vụ khám; đặc biệt rất yên tâm vì các bác sĩ
-                  khám trực tiếp cho bé đều là các bác sĩ có kinh nghiệm lâu năm
-                  . Ngoài ra mình còn được các bác sĩ tư vấn nhiệt tình giúp
-                  mình tự tin hơn khi chăm sóc cho bé tại nhà. 
+                  khám trực tiếp cho bé đều là các bác sĩ có kinh nghiệm lâu năm.
                 </p>
                 <i class="fa fa-quote-right"></i>
                 </div>

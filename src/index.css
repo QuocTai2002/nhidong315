@@ -14,3 +14,31 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+:where(.css-dev-only-do-not-override-k7429z).ant-drawer .ant-drawer-header{
+  padding: 16px ;
+  background-color: #007dc1;
+}
+/* .anticon svg{
+  color: white;
+} */
+textarea:where(.css-dev-only-do-not-override-k7429z).ant-input{
+  min-height: 145px;
+}
+@media screen and (max-width:1250px){
+  textarea:where(.css-dev-only-do-not-override-k7429z).ant-input{
+    min-height: 100px;
+  }
+}
+/* @media screen and (max-width:820px){
+  :where(.css-dev-only-do-not-override-k7429z).ant-carousel .slick-slider .slick-list{
+    transform: translateX(22px);
+  }
+} */
+@media screen and (max-width:391px){
+  :where(.css-dev-only-do-not-override-k7429z).ant-carousel{
+    width: 100%;
+  }
+  :where(.css-dev-only-do-not-override-k7429z).ant-carousel .slick-slider .slick-list{
+    transform: translateX(0px);
+  }
+}
