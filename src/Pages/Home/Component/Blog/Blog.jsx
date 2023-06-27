@@ -61,7 +61,7 @@ const Blog = () => {
             clickable: true,
           }}
           breakpoints={{
-            390: {
+            340: {
               slidesPerView: 2,
               spaceBetween: 10,
             },

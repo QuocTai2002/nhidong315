@@ -9,7 +9,7 @@ const Doctor = () => {
         <div className='text-center pb-12'>
             <h2 className='font-bold text-3xl text-white max-[820px]:text-2xl'>ĐỘI NGŨ BÁC SĨ</h2>
         </div>
-        <div className='flex max-[391px]:flex-col max-[820px]:gap-4 items-center justify-around'>
+        <div className='flex max-[641px]:flex-col max-[820px]:gap-4 items-center justify-around'>
             <div className='item bg-white w-64 max-[391px]:w-72 max-[820px]:w-44 rounded-lg flex flex-col items-center'>
                 <div className='w-40 max-[391px]:w-44 max-[391px]:h-44 max-[820px]:w-32 max-[820px]:h-32 h-40 my-5 rounded-full overflow-hidden'>
                 <img className='w-full' src="https://st.315healthcare.com/resource/doctorIntro/profile/avatar/20211025/bs_bao%20_quyen.jpg" alt="#" />

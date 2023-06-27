@@ -200,9 +200,9 @@ const Home = () => {
           ]}
           />
         </div>
-        <div className="max-[391px]:pt-0 max-[391px]:rounded-xl max-[391px]:border-b-2 max-[391px]:mb-5 pl-4 pt-4 max-[391px]:pl-0 max-[820px]:flex max-[820px]:justify-center max-[820px]:py-5 ">
+        <div className="max-[641px]:pt-0 max-[391px]:rounded-xl max-[391px]:border-b-2 max-[391px]:mb-5 pl-4 pt-4 max-[391px]:pl-0 max-[820px]:flex max-[820px]:justify-center max-[820px]:py-5 ">
           <div className="flex items-center">
-            <div className="flex max-[391px]:items-start items-center mr-5 max-[391px]:flex-col">
+            <div className="flex max-[641px]:items-start items-center mr-5 max-[641px]:flex-col">
               <h2 className="pr-3 text-base font-semibold">
                 <i class="fa fa-map-marker-alt text-nhiDong-315"></i> Tỉnh/Thành
                 Phố
@@ -223,8 +223,8 @@ const Home = () => {
                 ]}
               />
             </div>
-            <div className="flex max-[391px]:items-start items-center max-[391px]:flex-col">
-              <h2 className="py-2 max-[391px]:py-0 pr-3 text-base font-semibold">
+            <div className="flex max-[641px]:items-start items-center max-[641px]:flex-col">
+              <h2 className="py-2 max-[641px]:py-0 pr-3 text-base font-semibold">
                 <i class="fa fa-city text-nhiDong-315"></i> Quận/Huyện
               </h2>
               <Select

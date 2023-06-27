@@ -27,7 +27,7 @@ setValueLinkMap(mapAddress[0]?.linMap)
     <div className="flex max-[820px]:flex-col-reverse items-center justify-center px-4 pb-4  gap-3">
       <div className="w-2/5 mt-4 max-[820px]:w-full" style={{ backgroundColor: "#fafafa" }}>
         <div
-          className={`${props?.color} max-[820px]:w-788 max-[391px]:w-110 w-100 text-center text-white rounded-t-lg py-1  font-semibold`}
+          className={`${props?.color} max-[820px]:w-full w-100 text-center text-white rounded-t-lg py-1  font-semibold`}
         >
           <h2 className=" ">Hệ thống phòng khám {props?.text} 315</h2>
         </div>
