@@ -3,8 +3,12 @@ import { NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import i18n from "i18next";
 import "./headerStyle.css";
-import { Drawer } from "antd";
+import { Drawer, Select } from "antd";
+import tagVietNam from '../../image/vietnam.png'
+import tagAmerica from '../../image/us.png'
+
 const Headers = () => {
+ 
   const { t } = useTranslation("translation");
   const [open, setOpen] = useState(false);
   const  [service, setService] =useState(false)
@@ -17,10 +21,14 @@ const Headers = () => {
   const onClose = () => {
     setOpen(false);
   };
-  const changeLanguage = (e) => {
-    const languageValue = e.target.value;
+  const changeLanguage = (languageValue) => {
+    // const languageValue = e.target.value;
+    console.log(languageValue);
     i18n.changeLanguage(languageValue);
   };
+  const testReadValue = () => {
+
+  }
   const titleDrawer = (
     <>
       {" "}
@@ -57,6 +65,17 @@ const Headers = () => {
               >
                 {t("Trang chủ")}
                 
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/Introduce"
+                className={(p) => {
+                  if (p.isActive) return "text-sky-500";
+                  return "hover:text-sky-500 duration-300";
+                }}
+              >
+                {t("Giới Thiệu")}
               </NavLink>
             </li>
             <li>
@@ -106,17 +125,6 @@ const Headers = () => {
             </li>
             <li>
               <NavLink
-                to="/Introduce"
-                className={(p) => {
-                  if (p.isActive) return "text-sky-500";
-                  return "hover:text-sky-500 duration-300";
-                }}
-              >
-                {t("Giới Thiệu")}
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
                 to="/Contact"
                 className={(p) => {
                   if (p.isActive) return "text-sky-500";
@@ -127,16 +135,34 @@ const Headers = () => {
               </NavLink>
             </li>
           </ul>
-          <select
+          {/* <select
             style={{ paddingBottom: 3 }}
             className="ml-5 "
             name="option"
             id="1"
-            onChange={changeLanguage}
+            // onChange={changeLanguage}
           >
             <option value="vie">Việt Nam</option>
-            <option value="eng">English</option>
-          </select>
+            <option value="eng"><i class="text-teal-600 fa fa-ad"></i></option>
+          </select> */}
+          <Select defaultValue="vie"
+          onChange={changeLanguage}
+      style={{
+        width: 70,
+        marginLeft:20
+      }}
+      options={[
+        {
+          value: 'vie',
+          label: <>
+            <img  src={tagVietNam} alt="Viet Nam" />
+            </>,
+        },
+        {
+          value: 'eng',
+          label: <><img src={tagAmerica} alt="America" /></>,
+        },
+      ]}/>
         </div>
       </div>
       <Drawer
@@ -291,6 +317,7 @@ const Headers = () => {
                 </a>
               </li>
             </ul>
+           
       </Drawer>
     </header>
   );

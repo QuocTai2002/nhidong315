@@ -22,30 +22,30 @@ const Doctor = () => {
             </div>
             <div className='item bg-white w-64 max-[391px]:w-72 max-[820px]:w-44 rounded-lg flex flex-col items-center'>
                 <div className='w-40 h-40 max-[391px]:w-44 max-[391px]:h-44 max-[820px]:w-32 max-[820px]:h-32 my-5 rounded-full overflow-hidden'>
-                <img className='w-full' src="https://st.315healthcare.com/resource/doctorIntro/profile/avatar/20211025/bs_bao%20_quyen.jpg" alt="#" />
+                <img className='w-full' src="https://st.315healthcare.com//sr/display?op=resize&w=350&path=doctorIntro/profile/avatar/20211109/BS YẾN LY AVT.png" alt="#" />
                 </div>
                 <div className='m-5 max-[820px]:m-2'>
-                    <h2 className='font-bold text-center max-[391px]:text-lg' >Thạc Sĩ - Bác sĩ.<br/> Lê Thanh Bảo Quyên</h2>
+                    <h2 className='font-bold text-center max-[391px]:text-lg' >Bác sĩ chuyên khoa Nhi.<br/> Huỳnh Ngọc Yến Ly</h2>
                     <p className='py-4'>Cựu Bs Bệnh viện Nhi Đồng 1</p>
                 </div>
 
             </div>
             <div className='item bg-white w-64 max-[391px]:w-72 max-[820px]:w-44 rounded-lg flex flex-col items-center'>
                 <div className='w-40 h-40 max-[391px]:w-44 max-[391px]:h-44 max-[820px]:w-32 max-[820px]:h-32 my-5 rounded-full overflow-hidden'>
-                <img className='w-full' src="https://st.315healthcare.com/resource/doctorIntro/profile/avatar/20211025/bs_bao%20_quyen.jpg" alt="#" />
+                <img className='w-full' src="https://st.315healthcare.com//sr/display?op=resize&w=350&path=doctorIntro/profile/avatar/20211025/bs_phuong.jpg" alt="#" />
                 </div>
                 <div className='m-5 max-[820px]:m-2'>
-                    <h2 className='font-bold text-center max-[391px]:text-lg' >Thạc Sĩ - Bác sĩ.<br/> Lê Thanh Bảo Quyên</h2>
+                    <h2 className='font-bold text-center max-[391px]:text-lg' >Thạc Sĩ - Bác sĩ.<br/> Từ Thị Hoàng Phượng</h2>
                     <p className='py-4'>Cựu Bs Bệnh viện Nhi Đồng 1</p>
                 </div>
 
             </div>
             <div className='item bg-white w-64 max-[391px]:w-72 max-[820px]:w-44 rounded-lg flex flex-col items-center'>
                 <div className='w-40 h-40 max-[391px]:w-44 max-[391px]:h-44 my-5 max-[820px]:w-32 max-[820px]:h-32 rounded-full overflow-hidden'>
-                <img className='w-full' src="https://st.315healthcare.com/resource/doctorIntro/profile/avatar/20211025/bs_bao%20_quyen.jpg" alt="#" />
+                <img className='w-full' src="https://st.315healthcare.com//sr/display?op=resize&w=350&path=doctorIntro/profile/avatar/20211025/bs_khanh_van.jpg" alt="#" />
                 </div>
                 <div className='m-5 max-[820px]:m-2'>
-                    <h2 className='font-bold text-center max-[391px]:text-lg' >Thạc Sĩ - Bác sĩ.<br/> Lê Thanh Bảo Quyên</h2>
+                    <h2 className='font-bold text-center max-[391px]:text-lg' >Thạc sĩ - Bác sĩ<br/> Đỗ Thị Khánh Vân</h2>
                     <p className='py-4'>Cựu Bs Bệnh viện Nhi Đồng 1</p>
                 </div>
 

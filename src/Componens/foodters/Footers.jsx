@@ -7,11 +7,7 @@ const Footers = () => {
       <footer className="container mx-auto max-[820px]:w-11/12 w-3/5">
         <div className="flex max-[641px]:flex-col  justify-around gap-6">
           <div className="w-2/6 max-[641px]:flex max-[641px]:w-full">
-            <img
-              className="w-36 max-[641px]:w-28 max-[641px]:h-28"
-              src="images/logo_nhidong315.png"
-              alt="nhi đồng 315"
-            />
+            <h2 className="text-2xl">315 HEALTHCARE</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
               cupiditate reprehenderit inventore dolor temporibus fuga quam
